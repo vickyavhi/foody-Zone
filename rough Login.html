@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;   
+    width:30%;
+    height:400px;
+    margin:auto;
+    border-radius:5px;
+    margin-top:10%;
+    
+    }
+    #container>h1{
+        text-align: center;
+        font-style: normal;
+    }
+    form label{
+        display:flex;
+        margin-top:10px;
+        font-size:20px;
+    }
+    form input{
+        width:70%;
+        padding:5%;
+        border-radius: 5%;
+
+    }
+    button{
+        width:100%;
+        padding:5%;
+        margin-top:5%;
+
+    }
+    p{
+        text-align: center;
+        margin-top:10%;
+    }
+</style>
+<body>  
+     <div id="container">
+    <h1>Login</h1>
+    <form>
+        <label>Email</label>
+        <input type="text"placeholder="Email Id">
+
+        <label>Password</label>
+        <input type="password"placeholder="Password">
+        
+        <button>SIGN UP</button>
+
+        <p>Don't have an account? <a href="Signup.html">Sign In</a></p>
+        <br><br>
+    </form>
+    
+    
+    
+</div>
+    <!-- <div>
+    <input type="email" placeholder="email">
+    <input type="password" placeholder="password">
+    <button>Login</button>
+</div> -->
+</body>
+</html>
+<script>
+let submit_btn=document.querySelector("button");
+    submit_btn.addEventListener("click",SubmitFunc);
+
+
+function SubmitFunc(){
+    let input_tag= document.querySelectorAll("input");
+    let email_detail=input_tag[0].value;
+    let password=input_tag[1].value;
+
+    let data=JSON.parse(localStorage.getItem("signup_detail"))
+
+    if(email_detail===data.email_detail && password===data.password){
+        alert("Yay! login sucessful");
+    }else{
+        alert("Incorrect email or password.")
+    }
+}
+
+</script>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        
+            width: 35%;
+            
+            margin: auto;
+            margin-top: 3%;
+            border-radius: 5%;
+        }
+        #container>h1{
+    text-align: center;
+    font-style: oblique;
+    
+        }
+form{
+    width: 300px;
+    margin-left: 50px;
+    
+}
+form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+form input{
+    width: 80%;
+    padding: 5%;
+   border-radius: 6%;
+   border: solid 1px rgb(207, 203, 203);
+   
+    
+}
+button{
+  width:100%;
+    padding: 4%;
+    border: solid rgb(207, 203, 203) 1px;
+    font-style: normal;
+    margin-top: 14%;
+}
+p{
+    text-align: center;
+    margin-top: 10%;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Login</h1>
+        <form>
+            
+    
+            <label>Email</label>
+            <input type="text"placeholder="Email Id">
+    
+            <label>Password</label>
+            <input type="password"placeholder="Password">
+            
+            <button>SIGN UP</button>
+            <p>Don't have an account? <a href="sinup.html">Sign In</a></p>
+            <br><br>
+        </form>
+        
+        
+        
+    </div>
+</body>
+</html>
+<script>
+    
+</script> -->

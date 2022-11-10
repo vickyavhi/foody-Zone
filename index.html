@@ -4,127 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="foody-Signup.html">
+    <link rel="stylesheet" href="signup-form.html">
+    
     <title>Document</title>
-    <style>
-
-*{
-            padding: 0px;
-            margin: 0px;
-        }
-#nav-container{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-    border:0px solid red;
-    height:100px;
-    width:100%;
-
-    
-}
-button{
-    width:120px;
-    height:40px;
-    border:none;
-    border-radius: 10px;
-    
-}
-
-.fb{
-    background-color:#35619f;
-    color:white;
-    font-size: large;
-    margin-right:10px;
-    margin-left:20px;
-    margin-top:10px;
-    
-}
-.fb:hover{
-    background-color: #8fb6ee;
-}
-.email{
-    background-color: gray;
-    color:white;
-    font-size: large;
-    margin-top:10px;
-}
-.email:hover{
-    background-color: rgb(100, 92, 92);
-}
-.login{
-    color: gray;
-    font-size: large;
-    margin-left:20px;
-    margin-top: 15px;
-
-}
-.signup{
-    color:gray;
-    font-size: large;
-    margin-top: 15px;
-}
-#right-side{
-    border: 0px solid red;
-    width:23%;
-    height:70px;
-    margin-top:20px;
-    margin-left: 80px;
-    display: flex;
-    justify-content: space-between;    
-
-}
-.logo{
-    margin-left: 230px;
-}
-#navbar2{
-    justify-content: space-evenly;
-    border:0px solid red;
-    height:60px;
-    margin-top: 10px;
-    background-color: #2bb673;
-    color:white;
-    font-size: 30px;
-    padding:10px;
-    align-items: center;
-    
-}
-
-.keys{
-    margin-top:10px;
-    color:white;
-    display: flex;
-    justify-content: space-evenly;
-}
-#slide{
-    border:px solid red;
-    height:600px;
-    width:90%;
-    margin:auto;
-    margin-left:120px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
-
-}
-#slide > img{
-    width:100%;
-    height:400px
-}
-#headings{
-    display: flex;
-    justify-content: space-around;
-}
-#headings>h1{
-    color:gray;
-}
-#headings>h2{
-    color:blue;
-    font-size:30px;
-}
-a{
-  color:white;
-  background-color:  #2bb673;
- 
-}
-    </style>
+   
 </head>
 <body>
     
@@ -144,15 +29,12 @@ a{
         
         <div id="right-side">
         <div class="login">Login</div>
-        <button class="fb">Facebook</button>
-        <button class="email">Email</button>
+        <button onclick="myfuncfb()"     class="fb">Facebook</button>
+        <button onclick="email()" class="email">Email</button>
         <hr>
-        <div class="signup">Sign Up</div>
+        <div class="signup"><a href="foody-Signup.html">Sign Up</a></div>
         </div>
-        </div>
-          
-        
-       
+        </div> 
         <div id="navbar2">
         <div class="keys">
         <div>Home</div>
@@ -164,62 +46,123 @@ a{
         <a href="https://www.kindmeal.my/articles/">Articles</a>
         <a href="https://www.kindmeal.my/help.htm">Help</a>
         </div>
-        </div></div>
-        
-        <div id="slide">
-            <img src="https://www.kindmeal.my/photos/shop/5/505-4609-m.jpg" alt="">
-        
         </div>
-        
-        
-            <div id="headings">
+        <div id="slide">
+             <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudCUyMGZvb2R8ZW58MHx8MHx8&w=1000&q=80" alt=""> 
+        </div>
+         <div id="headings">
             <h1>Latest News & Videos</h1>
         <h2>Save Lives with Your Blog <span>.</span></h2>
         <h2>News &amp; Articles <span>.</span></h2>
         <h2>follow Our Facebook <span>.</span></h2>
+            </div>     
+
+
+            <div id="frst-div">
+                <div>
+                    <img src="https://media.istockphoto.com/id/1359435502/photo/tandoori-chicken-non-veg-appetizer.jpg?b=1&s=170667a&w=0&k=20&c=uJc1uaM0-cSq90ivDP3CpHCsSKrt7SPv_f0q2yGupSk=" alt="">
+                
+                    <img src="https://assets.thehansindia.com/h-upload/2020/03/14/953945-food.webp" alt="">
+               
+                    <img src="https://media.istockphoto.com/id/1147252661/photo/vegan-lentil-curry-with-vegetables-top-view-healthy-plant-based-food-background.jpg?s=612x612&w=0&k=20&c=smhUn40kfUgwh-4j9rVDgXo4SnpeOgIRzlAvHa1nfoE=" alt="">
+                
+                    <img src="https://resize.indiatvnews.com/en/resize/newbucket/730_-/2020/02/non-veg-1582217034.jpg" alt="">
+              
+                    <!-- <img src="http://www.dineout.co.in/blog/wp-content/uploads/2019/08/sun-planet.jpg" alt=""> -->
+                </div>
+            </div>
+
+            <div id="headings">
+                <h1>Yummylicious Moments</h1>
+            <h2>Secret Recipes<span>.</span></h2>
+            <h2>Photo Moments <span>.</span></h2>
+            
+                </div>  
+
+            <div id="scnd-div">
+                <div>
+                    <img src="https://www.kindmeal.my/photos/moment/24/24604-47676-s.jpg" alt="">
+                
+                    <img src="https://www.kindmeal.my/photos/moment/24/24597-47663-s.jpg" alt="">
+                
+                    <img src="https://www.kindmeal.my/photos/moment/24/24595-47657-s.jpg" alt="">
+               
+                    <img src="https://www.kindmeal.my/photos/moment/24/24594-47652-s.jpg" alt="">
+
+                    <img src="https://www.kindmeal.my/photos/moment/24/24596-47660-s.jpg" alt="">
+
+                    <img src="https://www.kindmeal.my/photos/item/0/116-1057-s.jpg" alt="">
+                </div>
+                
+            </div>
+
+            <div id="headings">
+                <h1>Discover Restaurants</h1>
+            <h2>vegetarian Directory<span>.</span></h2>
+            <h2>Restaurant Menu <span>.</span></h2>
+            <h2>Food Map<span>.</span></h2>
+                </div>  
+
+
+            <div id="thrd-div">
+                <div>
+                    <img src="https://www.kindmeal.my/photos/moment/24/24604-47676-s.jpg" alt="">
+                
+                    <img src="https://www.kindmeal.my/photos/moment/24/24597-47663-s.jpg" alt="">
+                
+                    <img src="https://www.kindmeal.my/photos/moment/24/24595-47657-s.jpg" alt="">
+               
+                    <img src="https://www.kindmeal.my/photos/moment/24/24594-47652-s.jpg" alt="">
+
+                    <img src="https://www.kindmeal.my/photos/moment/24/24596-47660-s.jpg" alt="">
+
+                    <img src="https://www.kindmeal.my/photos/item/0/116-1057-s.jpg" alt="">
+                </div>
+            </div>
+
+            <div id="last">
+                <h1>Introducing Malaysia's Pioneering Meat-Free Lifestyle Platform</h1>
+            </div>
+
+            <div id="h2WithPic">
+           <h2>Brought to you by<span><img src="https://www.kindmeal.my/images/logo-petfinder-v2.png" alt=""></span></h2>
         
         </div>
-    
+        <div id="frth">
+        <h2>Instant coupon & dining. No upfront coupon payment,booking or printing.</h3>
+    </div>
+
+<div id="last-grid">
+<div>
+    <img src="https://www.kindmeal.my/images/intro_deal.png" alt="">
+    <h2>Get  Great Deals</h2>
+    <p>Show our FREE digital coupons to instantly enjoy exciting deals</p>
+</div>
+<div>
+    <img src="https://www.kindmeal.my/images/intro_kindmoment.png" alt="">
+    <h2>Share KindMoments</h2>
+    <p>spread the joy by sharing your yummy dining moments</p>
+</div>
+<div>
+    <img src="https://www.kindmeal.my/images/intro_menu.png" alt="">
+    <h2>Discover Delicious Food</h2>
+    <p>Explore the latest exquisite offerings and creative menus</p>
+</div>
+<div>
+    <img src="https://www.kindmeal.my/images/intro_friends.png" alt="">
+    <h2>Meet Food Lovers</h2>
+    <p>Make new, compassionate friends and share great food tips</p>
+</div>
+</div>
+
+<div id="last-sent">
+
+
+<p>Any restaurant or cafe can join KindMeal, vegetarian or not, as long as the deals and menu featured are meat-free.
+    Enjoy a great meat-free dining experience. Easily save animal lives, health, environment and money now!</p>
+
+</div>
+
+<button id="last-btn"><h1>Join KindMeal Now</h1> <br> <h3>Your tasty journey begins here</h3> </button>
 </body>
 </html>
-
-<!-- <body data-new-gr-c-s-check-loaded="14.1086.0" data-gr-ext-installed=""> -->
-   
-  <!-- Code injected by live-server -->
-  <!-- <script>
-      // <![CDATA[  <-- For SVG support
-      if ('WebSocket' in window) {
-          (function () {
-              function refreshCSS() {
-                  var sheets = [].slice.call(document.getElementsByTagName("link"));
-                  var head = document.getElementsByTagName("head")[0];
-                  for (var i = 0; i < sheets.length; ++i) {
-                      var elem = sheets[i];
-                      var parent = elem.parentElement || head;
-                      parent.removeChild(elem);
-                      var rel = elem.rel;
-                      if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                          var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                          elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                      }
-                      parent.appendChild(elem);
-                  }
-              }
-              var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-              var address = protocol + window.location.host + window.location.pathname + '/ws';
-              var socket = new WebSocket(address);
-              socket.onmessage = function (msg) {
-                  if (msg.data == 'reload') window.location.reload();
-                  else if (msg.data == 'refreshcss') refreshCSS();
-              };
-              if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                  console.log('Live reload enabled.');
-                  sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-              }
-          })();
-      }
-      else {
-          console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-      }
-      // ]]>
-  </script> -->
