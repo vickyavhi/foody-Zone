@@ -7,14 +7,16 @@
     <title>Document</title>
 </head>
 <style>
-
+*{
+    background-color: wheat;
+}
     #container{
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;   
     width:30%;
-    height:400px;
+    height:550px;
     margin:auto;
     border-radius:5px;
-    margin-top:10%;
+    /* margin-top:10%; */
     
     }
     #container>h1{
@@ -27,42 +29,50 @@
         font-size:20px;
     }
     form input{
-        width:70%;
-        padding:5%;
-        border-radius: 5%;
+        width:40%;
+        padding:3%;
+        border-radius:0%;
+        
 
     }
     button{
-        width:100%;
+        width:40%;
         padding:5%;
-        margin-top:5%;
-
+        margin-top:3%;
+        margin-left: 200px;
     }
     p{
         text-align: center;
-        margin-top:10%;
+        margin-top:0%;
     }
-   
+   img{
+    width:150px;
+    border:1px solid red;
+    margin:auto;
+    /* margin-left:250px;
+    margin-top: 30px; */
+   }
 </style>
 
 <body>
     
-        <img src="https://sso.masaischool.com/brand_dark.svg" alt=""/>
+      
    
     <form>
+        <!-- <img src="./HealthyFood.png" alt=""> -->
     <div id="container">
    <h1>SignUp</h1>
-   <label>Full Name</label>
-    <input type ="Full Name" placeholder="Enter Your Name" required>
+   <label>First Name</label><input type ="Full Name" required>
     <br>
+    <label>Last Name</label><input type ="Last Name"required>
     <label>Email</label>
-    <input type ="Email" placeholder="Enter email" required>
+    <input type ="Email" required>
     <br>
     <label>Password</label>
-    <input type ="Password" placeholder="Enter your password" required>
+    <input type ="Password"required>
    
-    <button>Submit</button>
-    <p>By signing up,I accept the Masai School<a href="Terms of Service"></a> and acknowledge the privacy Policy  
+    <button>Submit</button> <br> <br> <a href="Login.html">Login here</a>
+    <!-- <p>By signing up,I accept the Masai School<a href="Terms of Service"></a> and acknowledge the privacy Policy   -->
     </p>
        <br><br>
 
