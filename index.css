@@ -3,84 +3,143 @@
             padding: 0px;
             margin: 0px;
         }
-#nav-container{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-    border:0px solid red;
-    height:100px;
-    width:100%;
 
-    
+#nav-container{
+    border:0px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+#goodfood img{
+    width: 25%;
+    border:0px solid red;
+    margin-left: 20px;
+}
+.logo{
+    width:20%;
+    margin-right: 40px;
+    border:0px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.logo > img:nth-child(1) {
+    width: 20%;
+    height:40%;
+    border:0px solid red
+}
+.logo > img:nth-child(2) {
+    width: 20%;
+    height:40%;
+    border:0px solid red
+}
+.logo > img:nth-child(3) {
+    width: 20%;
+    height:40%;
+    border:0px solid red
+}
+#right-side > .login {
+    border: 0px solid red;
+    width:30%;
+    margin-right: -10px;
+    margin-top: 20px;
+}
+#right-side > .fb{
+    border:0px solid red;
+    margin-top: 20px;
+}
+#right-side > .email{
+    border:0px solid red;
+    margin-top: 20px;
+}
+#right-side > .signup{
+    border:0px solid red;
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+#right-side > hr{
+    margin-left:20px
 }
 button{
-    width:120px;
-    height:40px;
-    border:none;
-    border-radius: 10px;
-    
+width:120px;
+height:40px;
+border:none;
+border-radius: 10px;
+
 }
 
 .fb{
-    background-color:#35619f;
-    color:white;
-    font-size: large;
-    margin-right:10px;
-    margin-left:20px;
-    margin-top:10px;
-    
+background-color:white;
+color:white;
+font-size: large;
+margin-right:10px;
+margin-left:20px;
+margin-top:10px;
+
+
 }
-.fb:hover{
-    background-color: #8fb6ee;
+.fb>a{
+    text-decoration: none;
+    color:#124c9e;
+    background-color: white;
 }
+/* .fb:hover{
+background-color: #8fb6ee;
+} */
 .email{
-    background-color: gray;
-    color:white;
-    font-size: large;
-    margin-top:10px;
+background-color:white;
+color:white;
+font-size: large;
+margin-top:10px;
+cursor:pointer;
 }
-.email:hover{
-    background-color: rgb(100, 92, 92);
+.email>a{
+    text-decoration: none;
+    background-color: white;
+    color:rgb(243, 9, 9);
 }
 .login{
-    color: gray;
-    font-size: large;
-    margin-left:20px;
-    margin-top: 15px;
-
+color:white;
+font-size: large;
+margin-left:20px;
+margin-top: 15px;
+cursor:pointer;
+}
+.login>a{
+    text-decoration: none;
+    background-color: white;
+    color:gray;
 }
 .signup{
-    border:0px solid red;
-    color:gray;
-    font-size: large;
-    margin-top: 15px;
-    width:40%;
-    
-    height:20px
+border:0px solid red;
+color:gray;
+font-size: large;
+margin-top: 15px;
+width:40%;
+
+height:20px
 }
 .signup>a{
- background-color: white;
- color:gray;
- text-decoration: none;
+background-color: white;
+color:gray;
+text-decoration: none;
 }
 #right-side{
-    border: 0px solid red;
-    width:26%;
-    height:70px;
-    margin-top:20px;
-    margin-left: 80px;
-    display: flex;
-    justify-content: space-between;    
+border: 0px solid red;
+width:26%;
+height:70px;
+margin-top:20px;
+margin-left: 80px;
+display: flex;
+justify-content: space-between;    
 
-}
-.logo{
-    margin-left: 230x;
 }
 #navbar2{
     justify-content: space-evenly;
     border:px solid red;
     height:60px;
-    margin-top: 10px;
+    margin-top:0px;
     background-color: #2bb673;
     color:white;
     font-size: 30px;
@@ -102,7 +161,7 @@ button{
     margin:auto;
     margin-left:120px;
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-
+    cursor: pointer;
 
 }
 #slide > img{
@@ -117,10 +176,12 @@ button{
 }
 #headings>h1{
     color:gray;
+    cursor: pointer;
 }
 #headings>h2{
     color:blue;
     font-size:30px;
+    cursor: pointer;
 }
 a{
   color:white;
@@ -135,7 +196,7 @@ a{
     margin:auto;
     margin-top: 20px;
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-   
+    cursor: pointer;
 }
 #frst-div > div{
     border: 0px solid blue;
@@ -143,6 +204,7 @@ a{
     width: 100%;
     display: flex;
     margin-right: 90px;
+
     
 }
 #frst-div > div> img{
@@ -159,6 +221,7 @@ a{
     margin:auto;
     margin-top: 0px;
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    cursor: pointer;
    
 }
 #scnd-div > div{
@@ -191,8 +254,9 @@ a{
     width: 100%;
     display: flex;
     margin-right: 90px;
-    
+    cursor: pointer;
 }
+
 #thrd-div > div> img{
     width:auto;
     justify-content: space-around;
@@ -213,6 +277,7 @@ padding:20px;
 margin: auto;
 display:flex;
 justify-content:space-around ;
+cursor: pointer;
 }
 #frth{
     border:0px solid red;
@@ -220,9 +285,10 @@ justify-content:space-around ;
     margin:auto;
     color:gray;
     padding: 40px;
+    cursor: pointer;
 }
 #last-grid{
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(1,200px);
     border: 0px solid red;
@@ -239,16 +305,25 @@ justify-content: center;
 
 }
 #last-grid >div >img{
-margin: auto;
+margin-left:60px;
 padding: 10px;
 }
+
+#last-grid>div>p{
+    margin-left:10px;
+}
+#last-grid>div>h2{
+    margin-left:10px;
+}
+
+
 #last-sent{
    
     width:90%;
     margin:auto;
     color:gray;
     font-size: 25px;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 30px;
 }
 #last-btn{
@@ -256,10 +331,19 @@ padding: 10px;
    width:25%;
   height: 80px;
     color:white;
-    margin-left:500px;
+    margin-left:525px;
     margin-top:30px;
     border-radius: 20px;
+    cursor: pointer;
+    
 }
+#last-btn :hover{
+    background-color:rgb(236, 118, 118);
+}
+#last-btn>h3{
+    margin-top: -15px;
+}
+
 a{
     text-decoration: none;
 }
@@ -289,33 +373,63 @@ a{
     margin-top:-43px;
     background-color: #2bb673;
 display: flex;
+font-size:medium;
+color:white;
 
 }
 #footer #frst_line {
-    color:white;
    
     width:15%;
     padding: 60px;
-    margin-left: 90px;
+    margin-left: 60px;
 }
 #footer #scnd_line{
     color:white;
    
     width:15%;
     padding: 60px;
-    margin-left: 60px;
+    margin-left: 40px;
 }
 #footer #thrd_line{
     color:white;
-   
-    width:15%;
+   border: 0px solid red;
+    
     padding: 60px;
-    margin-left: 60px;
+    margin-left: 40px;
 }
 #footer #frth_line{
     color:white;
    
     width:15%;
     padding: 60px;
-    margin-left: 60px;
+    margin-left: 40px;
+}
+#footer #fifth_line{
+    color:white;
+   
+    width:15%;
+    padding: 60px;
+    margin-left: -39px;
+}
+#copyright {
+border:0px solid red;
+margin:auto;
+width:100%;
+background-color: #2bb673;
+color:white;
+margin-top: -60px;
+margin-left:90px;
+
+}
+#copyright>h3{
+    /* margin-left: 190px; */
+    border: 0px solid red;
+    margin:auto;
+    width:50%
+}
+#copyright>p{
+    border: 0px solid red;
+    margin:auto;
+    width:90%;
+    margin-top: -18px;
 }
