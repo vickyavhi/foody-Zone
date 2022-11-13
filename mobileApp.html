@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.html">
+    <title>MobileApp</title>
+    <style>
+        *{
+            padding: 0px;
+            margin:0px;
+            size:80%;
+        } 
+        #nav-container{
+            border:0px solid red;
+            display: flex;
+            justify-content: space-between;
+        }
+        #goodfood img{
+            width: 25%;
+            border:0px solid red;
+            margin-left: 20px;
+        }
+        .logo{
+            width:20%;
+            margin-right: 40px;
+            border:0px solid blue;
+            display: flex;
+            /* margin:auto; */
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .logo > img:nth-child(1) {
+            width: 20%;
+            height:40%;
+            border:0px solid red
+        }
+        .logo > img:nth-child(2) {
+            width: 20%;
+            height:40%;
+            border:0px solid red
+        }
+        .logo > img:nth-child(3) {
+            width: 20%;
+            height:40%;
+            border:0px solid red
+        }
+
+        button{
+    width:120px;
+    height:40px;
+    border:none;
+    border-radius: 10px;
+    
+}
+
+.fb{
+    background-color:#35619f;
+    color:white;
+    font-size: large;
+    margin-right:10px;
+    margin-left:20px;
+    margin-top:10px;
+    
+}
+.fb:hover{
+    background-color: #8fb6ee;
+}
+.email{
+    background-color: gray;
+    color:white;
+    font-size: large;
+    margin-top:10px;
+}
+.email:hover{
+    background-color: rgb(100, 92, 92);
+    cursor:pointer;
+}
+.login{
+    color: gray;
+    font-size: large;
+    margin-left:20px;
+    margin-top: 15px;
+    cursor:pointer;
+}
+.signup{
+    border:0px solid red;
+    color:gray;
+    font-size: large;
+    margin-top: 15px;
+    width:40%;
+    
+    height:20px
+}
+.signup>a{
+ background-color: white;
+ color:gray;
+ text-decoration: none;
+}
+#right-side{
+    border: 0px solid red;
+    width:26%;
+    height:70px;
+    margin-top:20px;
+    margin-left: 80px;
+    display: flex;
+    justify-content: space-between;    
+
+}
+#navbar2{
+    justify-content: space-evenly;
+    border:px solid red;
+    height:60px;
+    margin-top: 0px;
+    background-color: #2bb673;
+    color:white;
+    font-size: 30px;
+    padding:10px;
+    align-items: center;
+    
+}
+
+.keys{
+    margin-top:10px;
+    color:white;
+    display: flex;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+}
+#navbar2>.keys>a{
+    color: white;
+}
+#page1{
+background-color: rgb(224, 224, 228);
+height: 250px;
+
+}
+#page1>div{
+    margin: auto;
+    border: 0px solid red;
+    height: 200px;
+}
+#page1> div p{
+    border: 0px solid blue;
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 80px;
+    
+}
+#page1 >h1{
+    margin-left: 80px;
+    font-weight: 200;
+}
+#page1 >div>p:nth-child(4){
+    color:gray;
+    
+
+}
+#lapy >img{
+    width: 65%;
+    margin-left: 230px;
+    padding:20px
+}
+#playstore>img{
+    width:25%;
+    justify-content: space-evenly;
+    margin-left: 230px;
+    cursor: pointer;
+}
+#footer{
+    border: 0px solid red;
+    height:500px;
+    margin-top:40px;
+    background-color: #2bb673;
+display: flex;
+font-size:medium;
+color:white;
+
+}
+#footer #frst_line {
+   
+    width:15%;
+    padding: 60px;
+    margin-left: 60px;
+}
+#footer #scnd_line{
+    color:white;
+   
+    width:15%;
+    padding: 60px;
+    margin-left: 40px;
+}
+#footer #thrd_line{
+    color:white;
+   border: 0px solid red;
+    
+    padding: 60px;
+    margin-left: 40px;
+}
+#footer #frth_line{
+    color:white;
+   
+    width:15%;
+    padding: 60px;
+    margin-left: 40px;
+}
+#footer #fifth_line{
+    color:white;
+   
+    width:15%;
+    padding: 60px;
+    margin-left: -39px;
+}
+#copyright {
+border:0px solid red;
+margin:auto;
+width:100%;
+background-color: #2bb673;
+color:white;
+margin-top: -50px;
+margin-left:90px;
+
+}
+#copyright>h3{
+    /* margin-left: 190px; */
+    border: 0px solid red;
+    margin:auto;
+    width:50%
+}
+#copyright>p{
+    border: 0px solid red;
+    margin:auto;
+    width:90%;
+    margin-top: -18px;
+}
+    </style>
+</head>
+<body>
+    <div id="nav-container">
+    
+        <div id="goodfood">
+                <img src="./HealthyFood.jpg" alt="Error">
+            </div>
+            <div class="logo">
+                <img src="https://www.kindmeal.my/images/follow_blog_grey.png" alt="">
+             
+                <img src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt="">
+              
+                <img src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt="">
+            </div>
+               
+            <div id="right-side">
+                <div class="login">Login</div>
+                <button onclick="myfuncfb()"     class="fb">Facebook</button>
+                <button onclick="email()" class="email">Email</button>
+                <hr>
+                <div class="signup"><a href="foody-Signup.html">Sign Up</a></div>
+                </div>
+                </div> 
+
+                <div id="navbar2">
+                    <div class="keys">
+                    <div>Home</div>
+                     <a href="https://www.kindmeal.my/deals.htm">Meal Deals</a>
+                    <a href="https://www.kindmeal.my/moments.htm">KindMoments</a>
+                    <a href="https://www.kindmeal.my/hotpicks.htm">Hot Picks</a>
+                    <a href="https://www.kindmeal.my/recipes.htm">Recipes</a>
+                    <a href="https://www.kindmeal.my/vegetarian_directory.htm">Directory</a>
+                    <a href="https://www.kindmeal.my/articles/">Articles</a>
+                    <a href="https://www.kindmeal.my/help.htm">Help</a>
+                    </div>
+                    </div>
+
+                    
+                    <div id="page1">
+                        <h1>Foody-Zone Mobile Apps on iOS & Android</h1>
+                       <div>
+                        <p>Yummylicious food at irresistible prices. One click (alright, it's a tap) to grab a coupon, and just another click to use it. No waiting, no upfront payment.</p>
+                        <p>Share delicious moments and exhibit your camwhore skills. Follow foodies to discover great dining places.</p>
+                    <p>We know you're hungry. Time to download the app.</p>
+                    <p><i>Psst.. Save the cows, save the world!
+                    </i></p>
+                </div>
+                    </div>
+                    <div id="lapy">
+                        <img src="https://www.kindmeal.my/images/mobile_app_large.png" alt="">
+                    </div>
+                    <div id="playstore">
+                    
+                        <img src="https://www.kindmeal.my/images/mobile_download_ios.png" alt="">
+                        <img src="https://www.kindmeal.my/images/mobile_download_android.png" alt="">
+                    </div>
+          
+                    <!-- footer -->
+<div id="footer">
+    <div id="frst_line">
+<h2>General</h2>
+ <p>Sign Up</p>
+ <p>Business/Restaurateurs</p>
+ <p>Advertising</p>
+ <p>About Kindmeal.my</p>
+ <p>Help & FaQ</p>
+ <p>Terms & condition</p>
+ <p>Inspiring Partners</p>
+ <p>Lifestyle Ambassadors</p>
+ <p>Jobs & Careers</p>
+ <p>Contact Us</p>
+ </div>
+<div id="scnd_line">
+
+    <h2>Features</h2>
+    <p>Meat-Free Deals</p>
+    <p>Tasty Menus</p>
+    <p>Kind moments</p>
+    <p>Meat-free Recipes</p>
+    <p>Member Recommendations</p>
+    <p>Featured Restaurants</p>
+    <p>Vegetarian & Vegan Directory</p>
+    <p>food map</p>
+    <p>Become A Superhero </p>
+    <p>Vegan News & Vegetarian Articles</p>
+    <p>Latest Comments</p>
+
+</div>
+
+<div id="thrd_line">
+
+<h2>SocialMedia</h2>
+<p>Kindmeal Widget</p>
+<p>Facebook</p>
+<p>Twitter</p>
+<p>Instagram</p>
+</div>
+
+<div id="frth_line">
+<h2>Mobiles</h2>
+<p>iPhone & iPad App</p>
+<p>Android App</p>
+<p>Exciting Promos</p>
+<p>Gandhimai:ending Mass Slaughter</p>
+<p>Free Meals</p>
+<p>Food Bloggers</p>
+<p>Uber CHIRP</p>
+<p>Jane Goodali Contest</p>
+<p>Win Digi iPhone 6</p>
+<p>Feed The Poor</p>
+<p>Win Superhero Gifts</p>
+<p>Win an iPad Mini 3</p>
+</div>
+
+<div id="fifth_line">
+<h2>Exciting Promos </h2>
+<p>Gandhimai:Ending Mass Slaughter</p>
+<p>Tasty Menus</p>
+<p>Kind Moments</p>
+<p>Meat-free Recipes</p>
+<p>Member Recommendations</p>
+<p>Featured Restaurants</p>
+<p>Vegetarian Vegan Directory</p>
+<p>Food Map</p>
+<p>Become A Superhero</p>
+<p>Vegan News & Vegetarian Articles</p>
+<p>Latest Comments</p>
+</div>
+</div>
+<div id="copyright">
+<h3>Copyright @kindmeal.my,2014-2022.All rights reserved.</h3> <br> <p> This website promotes compassionate,meat-free dining experience.some food may contain eggs,dairy products or alcohol,please view individual listings for details.</p>
+
+</div>
+
+                    </body>
+</html>
